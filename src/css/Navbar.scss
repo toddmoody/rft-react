@@ -4,11 +4,20 @@ $slate: #4A4A4A;
 $red: #f16059;
 
 .mob-nav {
-    height: 100vh;
+    height: 100%;
     width: 100%;
-    background: tomato;
+    background: rgba(0, 0, 0, 0.105);
+    border-radius: 7px;
     ul {
         list-style: none;
+        color: $white;
+        font-size: 1rem;
+        text-align: left;
+        padding: 24px 40px;
+    }
+    ul li {
+        padding: 0.65rem 0;
+        border-bottom: 0.5px dotted rgba(128, 128, 128, 0.349);
     }
 }
 
