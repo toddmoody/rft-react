@@ -1,0 +1,206 @@
+//variables
+$white: #FFF;
+$white-btn: rgba(255, 255, 255, 0.6);
+$slate: #4A4A4A;
+$red: #f16059;
+$red-nav: #f16159a4;
+$light-bgrd: rgb(243, 243, 243);
+
+.header-wrapper {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    background-color: $slate;
+    margin: 0;
+    padding: 0.8rem .6rem 0 .6rem;
+        .content-block { 
+            h1 {
+                margin: 0.6rem 0 0 0;
+                color: $white;
+                font-size: 1.55rem;
+                font-weight: 700;
+                line-height: 2.10rem;
+                letter-spacing: -.1rem;
+            }
+            .btn-wrapper {
+                margin-top: 2.15rem; 
+                .hero-btn {
+                    display: inline-block;
+                    padding: 1rem 2.2rem;
+                    font-size: 1rem;
+                    border-radius: 7px;
+                    height: auto;
+                    background-color: transparent;
+                    border: 1px solid white;
+                    color: $white;
+                    font-size: 0.65rem;
+                    font-weight: 700;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    }
+                .hero-btn:hover {
+                    padding: 1rem 2.6rem;
+                    background-color: $red;
+                    border: 1px solid $red;
+                    color: $white;
+                    transition-delay: 0s;
+                    transition-duration: 0.3s;
+                    transition-property: all;
+                    transition-timing-function: ease-in-out;
+                }  
+            }
+        }
+        .scroll-down {
+            span {
+                display: none;
+            }
+            .arrow {
+                font-size: 1.15rem;
+                color: $white;
+                }
+        }
+
+    .content-block,
+    .scroll-down {
+        padding: 10px 10px;
+        color: white;
+        font-size: 2rem;
+        text-align: center;
+    }
+    /* animation for to bounce down arrow */
+    .bounce {
+        display: inline-block;
+        position: relative;
+        -moz-animation: bounce 0.5s infinite linear;
+        -o-animation: bounce 0.5s infinite linear;
+        -webkit-animation: bounce 0.5s infinite linear;
+        animation: bounce 0.5s infinite linear;
+      }  
+
+        @-webkit-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @-moz-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @-o-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @-ms-keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+        @keyframes bounce {
+            0% { top: 0; }
+            50% { top: -0.2em; }
+            70% { top: -0.3em; }
+            100% { top: 0; }
+        }
+
+        @media screen and (min-width: 568px) {
+            background: url(../assets/bgrd-image.jpg);
+            background-repeat: no-repeat;
+            
+            background-position: center;
+            background-size: cover;
+            padding: 0.8rem 2.8rem 0 2.8rem;
+            
+        }
+
+        @media screen and (min-width: 769px) {
+            .content-block {
+                h1 {
+                    margin: 0;
+                    color: $white;
+                    font-size: 2.25rem;
+                    font-weight: 700;
+                    line-height: 3.45rem;
+                    letter-spacing: -.1rem;
+                }
+            }
+            .btn-wrapper {
+                .hero-btn {
+                    display: inline-block;
+                    padding: 1rem 2.2rem;
+                    font-size: 0.70rem !important;
+                    font-weight: 600;
+                    border-radius: 7px;
+                    height: auto;
+                    background-color: $white;
+                    color: $slate;
+                    font-size: 0.85rem;
+                    }  
+            }
+            .scroll-down {
+                background: $light-bgrd;
+                display: flex;
+                flex-direction: column;
+                width: 400px;
+                margin: 0 auto;
+                padding: 0.95rem 0 0.45rem 0;
+                border-radius: 7px 7px 0 0;
+                span {
+                    display: inline;
+                    color: $red;
+                    font-weight: bold;
+                    font-size: 1.05rem;
+                }
+                .arrow {
+                    font-size: 1.15rem;
+                    color: $slate;
+                    margin: 0.65rem auto;
+                    }
+            }
+        }
+        @media screen and (min-width: 1440px) {
+            .content-block {
+                h1 {
+                    margin: 0;
+                    color: $white;
+                    font-size: 2.95rem;
+                    font-weight: 700;
+                    line-height: 3.95rem;
+                    letter-spacing: -.1rem;
+                }
+            }
+            .btn-wrapper {
+                .hero-btn {
+                    display: inline-block;
+                    padding: 1rem 2.2rem;
+                    font-size: 0.75rem !important;
+                    font-weight: 600;
+                    border-radius: 7px;
+                    height: auto;
+                    background-color: $white;
+                    color: $slate;
+                    font-size: 1.08rem;
+                    }  
+            } 
+            .scroll-down {
+                width: 460px;
+            }
+        }
+}
+
+
+
+
+
+
+
+
+

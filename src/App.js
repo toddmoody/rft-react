@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
-import './App.scss';
+import { Route, NavLink, HashRouter } from "react-router-dom";
 
-import Intro from './components/Intro'
+import Home from "./pages/Home"
+import Services from "./pages/Services"
+//import Projects from "./pages/Projects"
+//import About from "./pages/About"
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <p>yolo</p>
-        <Intro />
-      </div>
+      <HashRouter>
+          <div>
+            <div className="content">
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/services" component={Services}/>
+            </div>
+          </div>
+      </HashRouter>
     );
   }
 }

@@ -5,6 +5,7 @@
 $white: #FFFFFF;
 $red: rgba(238, 28, 37, 0.83);
 $slate: #4A4A4A;
+$red: #f16059;
 
 * {
   font-family: 'Open Sans', sans-serif;
@@ -13,21 +14,29 @@ $slate: #4A4A4A;
   box-sizing: border-box;
 }
 
+body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+
+
+.wrapper {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
 h1,
 h3,
 span {
   font-family: 'poppins', sans-serif;
   -webkit-font-smoothing: antialiased;
+  margin: 0;
 }
 
-body {
-  text-align: center;
-  font-size: 100px;
-}
-
-.wrapper {
-  max-width: 90%;
-  margin: 0 auto;
+p {
+  margin: 0;
 }
 
 .sub-title {
@@ -43,7 +52,7 @@ body {
 .statement {
   font-size: 1.05rem;
   line-height: 1.25;
-  margin: 0.65rem 0 0 0;
+  margin: 0;
 }
 
 @media screen and (min-width: 600px) {
