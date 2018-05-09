@@ -9,15 +9,15 @@ import close from '@fortawesome/fontawesome-free-solid/faTimesCircle';
 
 import '../css/Navbar.scss';
 
-class Child extends Component {
+class Mobnav extends Component {
     render() {
         return (
             <div className="mob-nav">
             <ul>
-              <li>Home</li>
-              <li>Services</li>
-              <li>Projects</li>
-              <li>About & Contact</li>
+                <li><NavLink class="mob-link" exact to="/">Home</NavLink></li>
+                <li><NavLink class="mob-link" to="/services">Services</NavLink></li>
+                <li><NavLink class="mob-link" to="/projects">Projects</NavLink></li>
+                <li><NavLink class="mob-link" to="/about-contact">About & Contact</NavLink></li>
             </ul>
           </div>
           );
@@ -28,7 +28,7 @@ class Navbar extends React.Component {
     constructor() {
       super();
       this.state = {
-        childVisible: false
+        MobnavVisible: false
       }
     }
 
@@ -48,35 +48,16 @@ class Navbar extends React.Component {
                 </nav> 
             </div>
             {
-              this.state.childVisible
-                ? <Child />
+              this.state.MobnavVisible
+                ? <Mobnav />
                 : null
             }
           </div>
         )
       }
 
-
-    /*render() {
-        return (
-            <div className="nav-container">
-                <nav> 
-                    <img src={Logo}></img>
-                    <FontAwesomeIcon id="hamburger" size="md" icon={bars}/>
-                    <ul>
-                        <li><NavLink exact to="/">Home</NavLink></li>
-                        <li><NavLink to="/services">Services</NavLink></li>
-                        <li><NavLink to="/projects">Projects</NavLink></li>
-                        <li><NavLink to="/about-contact">About & Contact</NavLink></li>
-                    </ul>
-                </nav> 
-            </div>
-        );
-    }
-*/
-
     onClick() {
-        this.setState(prevState => ({ childVisible: !prevState.childVisible }));
+        this.setState(prevState => ({ MobnavVisible: !prevState.MobnavVisible }));
       }
     };
 
