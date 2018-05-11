@@ -1,0 +1,106 @@
+$slate: #4A4A4A;
+$feature-dk: #05141D;
+$blue-dk: #05141D;
+$white: #FFF;
+$copy-dk: #cccccc;
+$red: #BF2411;
+
+#footer {
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(50, 61, 79), #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(50, 61, 79), #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    font-size: 0.8rem;
+    .footer-icon {
+        margin: 0 0 0.65rem 0;
+        font-size: 1.45rem;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .footer-icon:hover {
+        color: $red;
+    }
+    a {
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+        color: $copy-dk;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        text-decoration: none;
+        border-bottom: 1px dotted $copy-dk;
+    }
+    a:hover {
+        color: $white;
+        border-bottom: 1px dotted $white;
+    }
+    .footer-links {
+        border-bottom: none;
+    }
+    .footer-links:hover {
+        border-bottom: none;
+    }
+    .footer-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 5.5rem 1.5rem 5.5rem 1.5rem;
+        color: $copy-dk;
+        .flex-col-1 {
+            flex: 1 0 20%;
+            margin-bottom: 1.5rem;
+        }
+        .flex-col-2 {
+            flex: 1 0 20%;
+            margin-bottom: 1.5rem;
+            ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                li {
+                    margin: 0;
+                    line-height: 1.75;
+                }
+            }
+        }   
+        .flex-col-3 {
+            flex: 1 0 20%;
+        }
+
+        .flex-col-1,
+        .flex-col-2 {
+            p:nth-child(1) {
+                margin-bottom: 0.55rem;
+            }
+        }
+
+
+            @media screen and (min-width: 550px) {
+            }
+        
+            @media screen and (min-width: 769px) {
+                text-align: center;
+                flex-direction: row;
+                justify-content: space-between;
+            .flex-col-1 {
+            text-align: left;
+            flex: 1 0 20%;
+            margin-bottom: 0;
+            }
+            .flex-col-2 {
+                text-align: center;
+                flex: 1 0 20%;
+                margin-bottom: 0;
+            }   
+            .flex-col-3 {
+                text-align: right;
+                flex: 1 0 20%;
+            }
+    }
+        
+            @media screen and (min-width: 1440px) {
+            }
+    }
+    }
+
+
+
+

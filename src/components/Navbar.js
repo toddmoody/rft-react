@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import Logo from "../assets/RFT-trans.png" 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
 import bars from '@fortawesome/fontawesome-free-solid/faBars';
-import close from '@fortawesome/fontawesome-free-solid/faTimesCircle';
+// import close from '@fortawesome/fontawesome-free-solid/faTimesCircle';
 
 import '../css/Navbar.scss';
 
@@ -13,12 +13,12 @@ class Mobnav extends Component {
     render() {
         return (
             <div className="mob-nav">
-            <ul>
-                <li><NavLink class="mob-link" exact to="/">Home</NavLink></li>
-                <li><NavLink class="mob-link" to="/services">Services</NavLink></li>
-                <li><NavLink class="mob-link" to="/projects">Projects</NavLink></li>
-                <li><NavLink class="mob-link" to="/about-contact">About & Contact</NavLink></li>
-            </ul>
+                <ul>
+                    <li><NavLink class="mob-link" exact to="/">Home</NavLink></li>
+                    <li><NavLink class="mob-link" to="/services">About & services</NavLink></li>
+                    <li><NavLink class="mob-link" to="/projects">Projects</NavLink></li>
+                    <li><NavLink class="mob-link" to="/contact">Contact</NavLink></li>
+                </ul>
           </div>
           );
       } 
@@ -36,14 +36,14 @@ class Navbar extends React.Component {
         return (
           <div>
             <div className="nav-container" onClick={() => this.onClick()}>
-                    <nav> 
-                    <img src={Logo}></img>
+                <nav> 
+                <NavLink id="home" exact to="/"><img src={Logo} alt="RFT (2016) Engineering Ltd"></img></NavLink>
                     <FontAwesomeIcon id="hamburger" icon={bars}/>
                     <ul>
                         <li><NavLink exact to="/">Home</NavLink></li>
-                        <li><NavLink to="/services">Services</NavLink></li>
+                        <li><NavLink to="/services">About & Services</NavLink></li>
                         <li><NavLink to="/projects">Projects</NavLink></li>
-                        <li><NavLink to="/about-contact">About & Contact</NavLink></li>
+                        <li><NavLink to="/contact">Contact</NavLink></li>
                     </ul>
                 </nav> 
             </div>

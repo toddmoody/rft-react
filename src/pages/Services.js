@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 
-import Navbar from "../components/Navbar"
+import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 
 class Services extends Component {
   render() {
     return (
         <div>
-        <Navbar/>
-        <h1>Yolo - this is the services page</h1>
+          <header className="child-wrapper">
+            <Navbar /> 
+            <div className="page-title">
+                <span>~ No job is too big or too small ~</span>
+                <h2>Engineering Services</h2>
+            </div>
+          </header>
+          <Footer />
         </div>
     );
   }

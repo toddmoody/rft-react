@@ -1,14 +1,9 @@
 $white: #FFFFFF;
 $slate: #4A4A4A;
 // $red: rgba(238, 28, 37, 0.83);
-$red: #f16059;
+$red: #BF2411;
 $light-bgrd: #FAFAFA;
 
-.card-row-a,
-.card-row-b {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     .services {
         display: flex;
         flex-direction: column;
@@ -20,7 +15,7 @@ $light-bgrd: #FAFAFA;
         text-align: left;
         text-decoration: none;
         background: $light-bgrd;
-        border-radius: 7px;
+        border-radius: 3px;
         box-shadow: 17px 14px 12px -13px #D8D8D8;
         -webkit-transform: translateX(0);
         -ms-transform: translateX(0);
@@ -45,34 +40,27 @@ $light-bgrd: #FAFAFA;
             transform: translateX(0);
             transition: all 0.2s;
         }
-    }
-}
-.services:hover {
-    background: $red;
-    box-shadow: 17px 14px 12px -13px #D8D8D8;
-    h3 {
-        color: $white;
-    }
-    p {
-        color: $white;
-        margin-left: 32px;
-    }
-}
+    
+        @media screen and (min-width: 550px) {
+        }
 
-    @media screen and (min-width: 550px) {
-    }
+        @media screen and (min-width: 769px) {
+                width: 31%;
+            }
+        }
 
-    @media screen and (min-width: 769px) {
-        .card-row-a,
-        .card-row-b {
-           display: flex;
-           flex-direction: row;
-           justify-content: space-between;
-           .services {
-               width: 31%;
-           }
+    .services:hover {
+        background: #BF2411;
+        box-shadow: 17px 14px 12px -13px #D8D8D8;
+        h3 {
+            color: $white;
+        }
+        p {
+            color: $white;
+            margin-left: 32px;
         }
     }
+    
 
 
 

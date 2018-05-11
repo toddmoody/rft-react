@@ -2,10 +2,13 @@
 $white: #FFF;
 $white-btn: rgba(255, 255, 255, 0.6);
 $slate: #4A4A4A;
-$red: #f16059;
+$sub-slate: rgb(100,100,100);
+$red: #BF2411;
 $red-nav: #f16159a4;
 $light-bgrd: rgb(243, 243, 243);
+$feature-dk: #05141D;
 
+//home page specific styles
 .header-wrapper {
     height: 100vh;
     width: 100%;
@@ -13,9 +16,9 @@ $light-bgrd: rgb(243, 243, 243);
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
-    background-color: $slate;
+    background-color: $feature-dk;
     margin: 0;
-    padding: 0.8rem 2.8rem 0 2.8rem;
+    // padding: 0.8rem 2.8rem 0 2.8rem;
         .content-block { 
             h1 {
                 margin: 0.6rem 0 0 0;
@@ -31,7 +34,7 @@ $light-bgrd: rgb(243, 243, 243);
                     display: inline-block;
                     padding: 1rem 2.2rem;
                     font-size: 1rem;
-                    border-radius: 7px;
+                    border-radius: 3px;
                     height: auto;
                     background-color: transparent;
                     border: 1px solid white;
@@ -112,12 +115,12 @@ $light-bgrd: rgb(243, 243, 243);
         }
 
         @media screen and (min-width: 568px) {
-            background: url(../assets/bgrd-image.jpg);
+            background: url(../assets/header-bgrd.jpg);
             background-repeat: no-repeat;
             
             background-position: center;
             background-size: cover;
-            padding: 0.8rem 2.8rem 0 2.8rem;
+            // padding: 0.8rem 2.8rem 0 2.8rem;
             
         }
 
@@ -152,7 +155,7 @@ $light-bgrd: rgb(243, 243, 243);
                 width: 400px;
                 margin: 0 auto;
                 padding: 0.95rem 0 0.45rem 0;
-                border-radius: 7px 7px 0 0;
+                border-radius: 3px 3px 0 0;
                 span {
                     display: inline;
                     color: $red;
@@ -183,7 +186,7 @@ $light-bgrd: rgb(243, 243, 243);
                     padding: 1rem 2.2rem;
                     font-size: 0.75rem !important;
                     font-weight: 600;
-                    border-radius: 7px;
+                    border-radius: 3px;
                     height: auto;
                     background-color: $white;
                     color: $slate;
@@ -195,6 +198,74 @@ $light-bgrd: rgb(243, 243, 243);
             }
         }
 }
+
+//child specific styles
+.child-wrapper {
+    // background: url(../assets/child-bgrd.jpg);
+    // background-repeat: no-repeat;
+    // background-position: top;
+    // background-size: cover;
+    background: #16222A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(50, 61, 79), #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(50, 61, 79), #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding:  0 0 0 0;
+    background-color: $slate;
+    height: 225px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .page-title {
+        background: $light-bgrd;
+        width: 90%;
+        margin: 0 auto;
+        padding: 0.95rem 0 0.45rem 0;
+        border-radius: 3px 3px 0 0;
+        h2 {
+            margin: 0.35rem 0 0.65rem 0;
+            text-transform: uppercase;
+            color: $slate;
+            font-size: 0.95rem;
+
+        }
+        span {
+            display: inline;
+            color: $sub-slate;
+            font-size: 0.75rem;
+        }
+    }
+
+        @media screen and (min-width: 769px) {
+            .page-title {
+                width: 65%;
+                margin: 0 auto;
+                padding: 0.95rem 0 0.45rem 0;
+                h2 {
+                    margin: 0.35rem 0 0.65rem 0;
+                    font-size: 1.2rem;
+                }
+                span {
+                    font-size: 0.85rem;
+                }  
+            }
+        }
+
+        @media screen and (min-width: 1440px) {
+            .page-title {
+                margin: 0 auto;
+                padding: 0.95rem 0 0.45rem 0;
+                h2 {
+                    margin: 0.35rem 0 0.65rem 0;
+                    font-size: 1.45rem;
+                }
+                span {
+                    font-size: 0.95rem;
+                }  
+            }
+        }
+}
+
+
 
 
 

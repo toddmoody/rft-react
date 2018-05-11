@@ -3,6 +3,8 @@
 
 // color variables 
 $white: #FFFFFF;
+$light-bgrd: rgb(243, 243, 243);
+$copy-dk: #e9e9e9;
 $red: rgba(238, 28, 37, 0.83);
 $slate: #4A4A4A;
 $red: #f16059;
@@ -37,6 +39,7 @@ span {
 
 p {
   margin: 0;
+  line-height: 1.75;
 }
 
 .sub-title {
@@ -46,18 +49,34 @@ p {
   font-size: 1.85rem !important;
   line-height: 1.4;
   font-weight: 600;
-  margin: 0;
+  margin: 0 0 1.05rem 0;
+}
+
+.sub-title-dk {
+  color: $copy-dk;
+  font-family: 'poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.85rem !important;
+  line-height: 1.4;
+  font-weight: 600;
+  margin: 0 0 1.05rem 0;
 }
 
 .statement {
+  font-size: 1.05rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.statement-dk {
+  color: $copy-dk;
   font-size: 1.05rem;
   line-height: 1.25;
   margin: 0;
 }
 
-@media screen and (min-width: 600px) {
-  .sub-title {
-    font-size: 2.2em;
-    margin-bottom: 0;
+  @media screen and (min-width: 600px) {
+    .sub-title {
+      font-size: 2.2em;
+    }
   }
-}

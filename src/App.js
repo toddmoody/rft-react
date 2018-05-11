@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import { Route, NavLink, HashRouter } from "react-router-dom";
+import { Route, HashRouter } from "react-router-dom";
 
 import Home from "./pages/Home"
 import Services from "./pages/Services"
-//import Projects from "./pages/Projects"
-//import About from "./pages/About"
+import Projects from "./pages/Projects"
+import Contact from "./pages/Contact"
 
 class App extends Component {
   render() {
@@ -14,6 +14,8 @@ class App extends Component {
             <div className="content">
               <Route exact path="/" component={Home}/>
               <Route exact path="/services" component={Services}/>
+              <Route exact path="/projects" component={Projects}/>
+              <Route exact path="/contact" component={Contact}/>
             </div>
           </div>
       </HashRouter>

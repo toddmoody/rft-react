@@ -1,0 +1,96 @@
+$white: #FFFFFF;
+$tag: #F1F0F0;
+$slate: #4A4A4A;
+$red: #BF2411;
+$light-bgrd: #FAFAFA;
+
+.projects {
+    text-align: left;
+    margin-bottom: 1.7rem;
+    .project-img {
+        background: $slate;
+        height: 300px;
+        border-radius: 3px 3px 0 0;
+    }
+    .project-a {
+        background: url(./../assets/Proj-A.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-b {
+        background: url(./../assets/Proj-B.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-c {
+        background: url(./../assets/Proj-C.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-dets {
+        background: $light-bgrd;
+        padding: 1.4rem 0 1.0rem 0;
+        border-radius: 0px 0px 3px 3px;
+        .tag {
+            margin-left: 1rem;
+            font-size: 0.65rem;
+            padding: 8px 8px;
+            background: $tag;
+            border-radius: 3px;
+        }
+        .tag-add {
+            display: none;
+        }
+        h3 {
+            font-size: 0.85rem;
+            margin-top: 1.45rem;
+            margin-left: 1rem;
+            color: $slate;
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+            transition: all .5s;
+        }
+        p {
+            font-size: 35px;
+            margin-left: 1rem;
+            color: $red;
+            font-weight: bolder;
+            -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+            transition: all 0.2s;
+        }
+    }
+
+        @media screen and (min-width: 550px) {
+        }
+
+        @media screen and (min-width: 769px) {
+                width: 31%;
+            }
+            @media screen and (min-width: 1440px) {
+                .project-dets {
+                .tag-add {
+                    display: inline;
+                }
+            }
+            }
+
+
+    }
+    .projects:hover {
+        .project-dets {
+            background: $red;
+        }
+        h3 {
+            color: $white;
+        }
+        p {
+            color: $white;
+            margin-left: 32px;
+        }
+    }

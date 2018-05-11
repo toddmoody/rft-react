@@ -1,0 +1,41 @@
+$light-bgrd: rgb(243, 243, 243);
+
+#child-projects {
+    background: $light-bgrd;
+    .child-projects-wrapper {
+        width: 80%;
+        padding: 1.25rem 0;
+        margin: 0 auto;
+    }
+
+    .child-project-cards {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem 0;
+    }
+    
+    @media screen and (min-width: 769px) {
+        .child-projects-wrapper {
+            width: 65%;
+            margin: 0 auto;
+            padding: 1.65rem 0;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        .child-project-cards {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 auto;
+            padding: 3.5rem 0;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .child-project-cards {
+            max-width: 1440px;
+        }
+    }
+}
