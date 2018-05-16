@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 
 class Contact extends Component {
+    
     render() {
         return (
             <div>
@@ -14,6 +15,7 @@ class Contact extends Component {
                         <h2>Contact us</h2>
                     </div>
                 </header>
+
                 <Footer />
             </div>
         );

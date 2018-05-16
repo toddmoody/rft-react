@@ -1,9 +1,10 @@
 //variables
 $white: #FFF;
+$off-white: #f0f0f0;
 $white-btn: rgba(255, 255, 255, 0.6);
 $slate: #4A4A4A;
 $sub-slate: rgb(100,100,100);
-$red: #BF2411;
+$red: #ed1c24;
 $red-nav: #f16159a4;
 $light-bgrd: rgb(243, 243, 243);
 $feature-dk: #05141D;
@@ -19,7 +20,7 @@ $feature-dk: #05141D;
     background-color: $feature-dk;
     margin: 0;
     // padding: 0.8rem 2.8rem 0 2.8rem;
-        .content-block { 
+        .content-block {
             h1 {
                 margin: 0.6rem 0 0 0;
                 color: $white;
@@ -29,7 +30,7 @@ $feature-dk: #05141D;
                 letter-spacing: -.1rem;
             }
             .btn-wrapper {
-                margin-top: 2.15rem; 
+                margin-top: 2.15rem;
                 .hero-btn {
                     display: inline-block;
                     padding: 1rem 2.2rem;
@@ -53,7 +54,7 @@ $feature-dk: #05141D;
                     transition-duration: 0.3s;
                     transition-property: all;
                     transition-timing-function: ease-in-out;
-                }  
+                }
             }
         }
         .scroll-down {
@@ -81,7 +82,7 @@ $feature-dk: #05141D;
         -o-animation: bounce 0.5s infinite linear;
         -webkit-animation: bounce 0.5s infinite linear;
         animation: bounce 0.5s infinite linear;
-      }  
+      }
 
         @-webkit-keyframes bounce {
             0% { top: 0; }
@@ -117,11 +118,11 @@ $feature-dk: #05141D;
         @media screen and (min-width: 568px) {
             background: url(../assets/header-bgrd.jpg);
             background-repeat: no-repeat;
-            
+
             background-position: center;
             background-size: cover;
             // padding: 0.8rem 2.8rem 0 2.8rem;
-            
+
         }
 
         @media screen and (min-width: 769px) {
@@ -146,7 +147,7 @@ $feature-dk: #05141D;
                     background-color: $white;
                     color: $slate;
                     font-size: 0.85rem;
-                    }  
+                    }
             }
             .scroll-down {
                 background: $light-bgrd;
@@ -191,8 +192,8 @@ $feature-dk: #05141D;
                     background-color: $white;
                     color: $slate;
                     font-size: 1.08rem;
-                    }  
-            } 
+                    }
+            }
             .scroll-down {
                 width: 460px;
             }
@@ -201,77 +202,57 @@ $feature-dk: #05141D;
 
 //child specific styles
 .child-wrapper {
-    // background: url(../assets/child-bgrd.jpg);
-    // background-repeat: no-repeat;
-    // background-position: top;
-    // background-size: cover;
-    background: #16222A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgb(50, 61, 79), #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgb(50, 61, 79), #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding:  0 0 0 0;
+    background: url(../assets/services-bgrd.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: $slate;
-    height: 225px;
+    height: 480px;
     margin: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     .page-title {
-        background: $light-bgrd;
         width: 90%;
-        margin: 0 auto;
-        padding: 0.95rem 0 0.45rem 0;
-        border-radius: 3px 3px 0 0;
+        margin: auto;
+        margin-top: 6.5rem;
         h2 {
             margin: 0.35rem 0 0.65rem 0;
             text-transform: uppercase;
-            color: $slate;
-            font-size: 0.95rem;
+            color: $white;
+            font-size: 1.75rem;
 
         }
         span {
             display: inline;
-            color: $sub-slate;
-            font-size: 0.75rem;
+            color: $off-white;
+            font-size: 1.05rem;
         }
     }
 
         @media screen and (min-width: 769px) {
             .page-title {
                 width: 65%;
-                margin: 0 auto;
                 padding: 0.95rem 0 0.45rem 0;
                 h2 {
                     margin: 0.35rem 0 0.65rem 0;
-                    font-size: 1.2rem;
+                    font-size: 1.95rem;
                 }
                 span {
-                    font-size: 0.85rem;
-                }  
+                    font-size: 1.15rem;
+                }
             }
         }
 
         @media screen and (min-width: 1440px) {
             .page-title {
-                margin: 0 auto;
                 padding: 0.95rem 0 0.45rem 0;
                 h2 {
                     margin: 0.35rem 0 0.65rem 0;
-                    font-size: 1.45rem;
+                    font-size: 2.25rem;
                 }
                 span {
-                    font-size: 0.95rem;
-                }  
+                    font-size: 1.25rem;
+                }
             }
         }
 }
-
-
-
-
-
-
-
-
-
-
-

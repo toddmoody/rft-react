@@ -1,5 +1,5 @@
 $white: #FFF;
-$red: #BF2411;
+$red: #ed1c24;
 $light-bgrd: rgb(243, 243, 243);
 $slate: #4A4A4A;
 $copy-dk: #cccccc;
@@ -11,9 +11,9 @@ $feature-dk: #05141D;
 }
 
 #projects {
-    background: #16222A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgb(50, 61, 79), #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgb(50, 61, 79), #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: rgb(49,60,68);  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, rgb(49,60,68), rgb(10,20,24));  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, rgb(49,60,68), rgb(10,20,24));
     padding:  0 0 5.5rem 0;
 }
 
@@ -34,7 +34,7 @@ $feature-dk: #05141D;
             font-size: 0.85rem;
             text-transform: uppercase;
             text-decoration: none;
-            }  
+            }
             .cta-btn:hover {
              background-color: red;
              padding: 1rem 3.15rem;
@@ -42,7 +42,7 @@ $feature-dk: #05141D;
              transition-duration: 0.3s;
              transition-property: all;
              transition-timing-function: ease-in-out;
-            }  
+            }
     }
 }
 
@@ -99,7 +99,7 @@ $feature-dk: #05141D;
                justify-content: space-between;
             }
         }
-        #projects { 
+        #projects {
             .projects-card-wrapper {
                 display: flex;
                 flex-direction: row;

@@ -13,7 +13,7 @@ $light-bgrd: rgb(243, 243, 243);
         flex-direction: column;
         padding: 1.5rem 0;
     }
-    
+
     @media screen and (min-width: 769px) {
         .child-projects-wrapper {
             width: 65%;
@@ -34,8 +34,45 @@ $light-bgrd: rgb(243, 243, 243);
     }
 
     @media screen and (min-width: 1440px) {
-        .child-project-cards {
-            max-width: 1440px;
+
         }
     }
+
+
+#child-services {
+  background: $light-bgrd;
+  padding: 5.5rem 0;
+  .child-services-wrapper {
+    width: 80%;
+    padding-bottom: 3rem;
+    margin: 0 auto;
+    p {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+      .child-services-wrapper {
+          width: 65%;
+          margin: 0 auto;
+      }
+
+      .child-services-cards {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          margin: 0 auto;
+          padding: 3.5rem 0;
+  }
+}
+
+  @media screen and (min-width: 1440px) {
+      .child-services-wrapper {
+          width: 72%;
+      }
+
+      .child-services-cards {
+        max-width: 1270px;
+      }
+  }
 }

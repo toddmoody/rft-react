@@ -11,7 +11,7 @@ class Projects extends Component {
     return (
         <div>
             <header className="child-wrapper">
-                <Navbar /> 
+                <Navbar />   
                 <div className="page-title">
                     <span>Check out our recent</span>
                     <h2>Residential & Commercial Projects</h2>

@@ -1,14 +1,19 @@
 import React, { Component } from 'react';
 import { NavLink } from "react-router-dom"
 
+import Hiab from "../../../assets/hiab.png"
+
 import '../../../css/ServicesCard.scss';
 
 class ServicesCardAS extends Component {
   render() {
     return (
       <NavLink to="/services" className="services">
-            <h3>Alloy & stainless</h3>
-            <p>⇢</p>
+        <div className="services-icon">
+          <img src={Hiab} alt="hiab"></img>
+        </div>
+        <h3>Alloy & stainless</h3>
+        <p>⇢</p>
       </NavLink>
     );
   }

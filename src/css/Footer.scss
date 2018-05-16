@@ -3,12 +3,12 @@ $feature-dk: #05141D;
 $blue-dk: #05141D;
 $white: #FFF;
 $copy-dk: #cccccc;
-$red: #BF2411;
+$red: #ed1c24;
 
 #footer {
-    background: #16222A;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, rgb(50, 61, 79), #16222A);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, rgb(50, 61, 79), #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgb(49,60,68);  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, rgb(49,60,68), rgb(10,20,24));  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, rgb(49,60,68), rgb(10,20,24)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
     font-size: 0.8rem;
     .footer-icon {
@@ -16,7 +16,7 @@ $red: #BF2411;
         font-size: 1.45rem;
         transition: all 0.5s ease-in-out;
     }
-    
+
     .footer-icon:hover {
         color: $red;
     }
@@ -60,7 +60,7 @@ $red: #BF2411;
                     line-height: 1.75;
                 }
             }
-        }   
+        }
         .flex-col-3 {
             flex: 1 0 20%;
         }
@@ -75,7 +75,7 @@ $red: #BF2411;
 
             @media screen and (min-width: 550px) {
             }
-        
+
             @media screen and (min-width: 769px) {
                 text-align: center;
                 flex-direction: row;
@@ -89,18 +89,14 @@ $red: #BF2411;
                 text-align: center;
                 flex: 1 0 20%;
                 margin-bottom: 0;
-            }   
+            }
             .flex-col-3 {
                 text-align: right;
                 flex: 1 0 20%;
             }
     }
-        
+
             @media screen and (min-width: 1440px) {
             }
     }
     }
-
-
-
-

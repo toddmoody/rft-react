@@ -39,10 +39,12 @@ class Home extends Component {
                             <h1>EFFICIENT, GUARANTEED, AND</h1>
                             <h1>PROFESSIONAL SERVICE.</h1>
                         </div>
+                        {/*
                         <div className="btn-wrapper">
                             <a href="/#" className="hero-btn">More about us</a>
                         </div>
-                    </div>  
+                        */}
+                    </div>
                     <div className="scroll-down">
                         <span>What we do</span>
                         <FontAwesomeIcon className="bounce arrow" size="lg" icon={FaChevronDown}/>
@@ -51,7 +53,7 @@ class Home extends Component {
                 <section id="intro">
                 <div className="wrapper">
                     <div className="intro-wrapper">
-                        <p className="statement">At RFT Engineering we specialise in the fabrication of structural steel - for commercial and residential properties. We pride ourselves on providing a full-service from fabrication right through to the installation of all structural steel, joists, decking, stairs and railings.</p> 
+                        <p className="statement">At RFT Engineering we specialise in the fabrication of structural steel - for commercial and residential properties. We pride ourselves on providing a full-service from fabrication right through to the installation of all structural steel, joists, decking, stairs and railings.</p>
                     </div>
                     <div className="services-card-wrapper">
                         <div className="card-row-a">
@@ -68,12 +70,12 @@ class Home extends Component {
                 </div>
             </section>
             <section id="projects">
-                <div className="wrapper"> 
+                <div className="wrapper">
                     <div className="projects-wrapper">
                         <p className="sub-title-dk">Recent projects</p>
                         <p className="statement-dk">Check out some of our recent work below or <Link className="more-projects" to="/projects">view more projects.</Link></p>
-                    </div>    
-                    <div className="projects-card-wrapper"> 
+                    </div>
+                    <div className="projects-card-wrapper">
                         <ProjectCardA />
                         <ProjectCardB />
                         <ProjectCardC />
@@ -91,7 +93,7 @@ class Home extends Component {
             </section>
             <Footer />
         </div>
-        ); 
+        );
     }
 }
 
