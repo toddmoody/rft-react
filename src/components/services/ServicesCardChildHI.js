@@ -5,7 +5,7 @@ import '../../css/ServicesCard.scss';
 
 import Hiab from "../../assets/hiab.png"
 
-class ServicesCardChildGE extends Component {
+class ServicesCardChildHI extends Component {
   render(){
     return (
       <Fade big>
@@ -13,7 +13,7 @@ class ServicesCardChildGE extends Component {
           <div className="services-icon-child">
             <img src={Hiab} alt="hiab"></img>
           </div>
-          <h3>General Engineering</h3>
+          <h3>15m hiab for hire</h3>
           <p className="statement">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.</p>
         </div>
       </Fade>
@@ -21,4 +21,4 @@ class ServicesCardChildGE extends Component {
   }
 }
 
-export default ServicesCardChildGE;
+export default ServicesCardChildHI;

@@ -1,22 +1,30 @@
 import React, { Component } from "react";
+import Fade from "react-reveal/Fade";
 
 import Navbar from "../components/Navbar"
+import GlobalCTA from "../components/GlobalCTA"
 import Footer from "../components/Footer"
 
 import ServicesCardChildGE from "../components/services/ServicesCardChildGE"
 import ServicesCardChildSS from "../components/services/ServicesCardChildSS"
+import ServicesCardChildSF from "../components/services/ServicesCardChildSF"
+import ServicesCardChildAS from "../components/services/ServicesCardChildAS"
+import ServicesCardChild3D from "../components/services/ServicesCardChild3D"
+import ServicesCardChildHI from "../components/services/ServicesCardChildHI"
 
 class Services extends Component {
   render() {
     return (
         <div>
-          <header className="child-wrapper">
-            <Navbar />
-            <div className="page-title">
-                <span>No job is too big or too small</span>
-                <h2>Engineering Services</h2>
-            </div>
-          </header>
+            <header className="child-wrapper">
+                <Navbar />
+                <Fade big>
+                <div className="page-title">
+                    <span>No job is too big or too small</span>
+                    <h2>Engineering Services</h2>
+                </div>
+                </Fade>
+            </header>
           <section id="child-services">
               <div className="wrapper">
                   <div className="child-services-wrapper">
@@ -27,9 +35,14 @@ class Services extends Component {
                   <div className="child-services-cards">
                     <ServicesCardChildGE />
                     <ServicesCardChildSS />
+                    <ServicesCardChildSF />
+                    <ServicesCardChildAS />
+                    <ServicesCardChild3D />
+                    <ServicesCardChildHI />
                   </div>
               </div>
-          </section>
+            </section>
+            <GlobalCTA />
           <Footer />
         </div>
     );

@@ -1,5 +1,8 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom"
+// import { Link } from "react-router-dom"
+import { HashLink as Link } from "react-router-hash-link";
+import Fade from "react-reveal/Fade";
+import HeadShake from 'react-reveal/HeadShake';
 
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
@@ -19,9 +22,9 @@ import ServicesCardHI from '../components/home/services-cards/ServicesCardHI';
 import Sample from '../components/Sample';
 
 //project card imports
-import ProjectCardA from '../components/home/project-cards/ProjectCardA';
-import ProjectCardB from '../components/home/project-cards/ProjectCardB';
-import ProjectCardC from '../components/home/project-cards/ProjectCardC';
+import ProjectCardSSHRA from '../components/home/project-cards/ProjectCardSSHRA';
+import ProjectCardCSCF from '../components/home/project-cards/ProjectCardCSCF';
+import ProjectCardPPZA from '../components/home/project-cards/ProjectCardPPZA';
 
 //SASS import statements
 import '../css/Home.scss';
@@ -31,41 +34,48 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <header className="header-wrapper">
-                    <Navbar />
-                    <div className="content-block">
-                        <div>
-                            <h1>RFT ENGINEERING:</h1>
-                            <h1>EFFICIENT, GUARANTEED, AND</h1>
-                            <h1>PROFESSIONAL SERVICE.</h1>
-                        </div>
-                        {/*
-                        <div className="btn-wrapper">
-                            <a href="/#" className="hero-btn">More about us</a>
-                        </div>
-                        */}
-                    </div>
-                    <div className="scroll-down">
-                        <span>What we do</span>
-                        <FontAwesomeIcon className="bounce arrow" size="lg" icon={FaChevronDown}/>
-                    </div>
-                </header>
+                  <header className="header-wrapper">
+                      <Navbar />
+                        <Fade big>
+                          <div className="content-block">
+                              <div>
+                                  <h1>RFT ENGINEERING:</h1>
+                                  <h1>EFFICIENT, GUARANTEED, AND</h1>
+                                  <h1>PROFESSIONAL SERVICE.</h1>
+                              </div>
+                              <div className="btn-wrapper">
+                                  <Link to="/#intro" className="hero-btn">More about us</Link>
+                              </div>
+                          </div>
+                      </Fade>
+                      <Fade bottom>
+                      <div className="scroll-down">
+                          <span>What we do</span>
+                          <Link to="/#intro"><FontAwesomeIcon className="bounce arrow" size="lg" icon={FaChevronDown}/></Link>
+                      </div>
+                      </Fade>
+                  </header>
+
                 <section id="intro">
                 <div className="wrapper">
                     <div className="intro-wrapper">
                         <p className="statement">At RFT Engineering we specialise in the fabrication of structural steel - for commercial and residential properties. We pride ourselves on providing a full-service from fabrication right through to the installation of all structural steel, joists, decking, stairs and railings.</p>
                     </div>
                     <div className="services-card-wrapper">
-                        <div className="card-row-a">
-                            <ServicesCardGE />
-                            <ServicesCardSS />
-                            <ServicesCardSF />
-                        </div>
-                        <div className="card-row-b">
-                            <ServicesCardAS />
-                            <ServicesCard3D />
-                            <ServicesCardHI />
-                        </div>
+                        <Fade big>
+                          <div className="card-row-a">
+                              <ServicesCardGE />
+                              <ServicesCardSS />
+                              <ServicesCardSF />
+                          </div>
+                        </Fade>
+                        <Fade big>
+                          <div className="card-row-b">
+                              <ServicesCardAS />
+                              <ServicesCard3D />
+                              <ServicesCardHI />
+                          </div>
+                        </Fade>
                     </div>
                 </div>
             </section>
@@ -75,11 +85,13 @@ class Home extends Component {
                         <p className="sub-title-dk">Recent projects</p>
                         <p className="statement-dk">Check out some of our recent work below or <Link className="more-projects" to="/projects">view more projects.</Link></p>
                     </div>
-                    <div className="projects-card-wrapper">
-                        <ProjectCardA />
-                        <ProjectCardB />
-                        <ProjectCardC />
-                    </div>
+                    <Fade big>
+                      <div className="projects-card-wrapper">
+                          <ProjectCardSSHRA />
+                          <ProjectCardCSCF />
+                          <ProjectCardPPZA />
+                      </div>
+                    </Fade>
                 </div>
             </section>
             <section id="cta">

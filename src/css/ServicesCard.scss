@@ -3,6 +3,7 @@ $slate: #4A4A4A;
 $icon-bgrd: #F1F0F0;
 $red: #ed1c24;
 $light-bgrd: #FAFAFA;
+$card-light: #808080;
 
     .services {
         display: flex;
@@ -27,12 +28,15 @@ $light-bgrd: #FAFAFA;
           width: 65px;
           height: 65px;
           border-radius: 50%;
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          text-align: center;
+          display: inline-block;
+          padding: 10px;
           img {
             max-width: 40px;
             max-height: 40px;
+            display: block;
+            padding-top: 4px;
+            margin: 0 auto;
           }
         }
         h3 {
@@ -76,9 +80,6 @@ $light-bgrd: #FAFAFA;
     }
 
     .services-child {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
         height: 100%;
         text-align: left;
         padding: 2.35rem 1.5rem 1.5rem 1.5rem;
@@ -93,13 +94,20 @@ $light-bgrd: #FAFAFA;
         transform: translateX(0);
         transition: all .5s;
         .services-icon-child {
-          img {
-            margin-left: 1rem;
-            background: $icon-bgrd;
-            width: 85px;
-            height: 85px;
-            padding: 18px 18px;
-            border-radius: 50%
+        background: $icon-bgrd;
+        margin-left: 1rem;
+        width: 65px;
+        height: 65px;
+        border-radius: 50%;
+        text-align: center;
+        display: inline-block;
+        padding: 10px;
+        img {
+          max-width: 40px;
+          max-height: 40px;
+          display: block;
+          padding-top: 4px;
+          margin: 0 auto;
           }
         }
         h3 {
@@ -114,7 +122,7 @@ $light-bgrd: #FAFAFA;
         p {
             font-size: 0.95rem;
             margin: 0 0 1rem 1rem;
-            color: $slate;
+            color: $card-light;
             -webkit-transform: translateX(0);
             -ms-transform: translateX(0);
             transform: translateX(0);
@@ -126,21 +134,19 @@ $light-bgrd: #FAFAFA;
       }
 
       @media screen and (min-width: 769px) {
-          .services-child {
-              width: 48%;
-          }
+        .services-child {
+          width: 40%;
+          margin: 0.65rem 0.65rem;
+        }
       }
 
 
 
-    .services:hover {
-        background: $red;
-        box-shadow: 17px 14px 12px -13px #D8D8D8;
+    .services-child:hover {
+        box-shadow: 17px 14px 12px -13px rgba(0,0,0,0.6);
         h3 {
-            color: $white;
         }
         p {
-            color: $white;
-            margin-left: 32px;
+            color: $slate;
         }
     }
