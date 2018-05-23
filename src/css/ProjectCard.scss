@@ -12,6 +12,42 @@ $light-bgrd: #FAFAFA;
         height: 300px;
         border-radius: 3px 3px 0 0;
     }
+    .project-tral {
+        background: url(./../assets/tral-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-swhr {
+        background: url(./../assets/swhr-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-cssg {
+        background: url(./../assets/cssg-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-csro {
+        background: url(./../assets/csro-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-rsbe {
+        background: url(./../assets/rsbe-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-csca {
+        background: url(./../assets/csca-lg.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
     .project-sshra {
         background: url(./../assets/sshra-lg.jpg);
         background-repeat: no-repeat;
@@ -70,9 +106,10 @@ $light-bgrd: #FAFAFA;
         }
 
         @media screen and (min-width: 769px) {
-                width: 31%;
+                width: 48.5%;
             }
             @media screen and (min-width: 1440px) {
+                width: 32%;
                 .project-dets {
                 .tag-add {
                     display: inline;

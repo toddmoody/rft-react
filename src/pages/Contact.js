@@ -43,7 +43,7 @@ class Contact extends Component {
                                 <button className="submit-btn" type="submit" id="contact-submit" name="contact-submit" value="submit">Send Message</button>
                         </form>
                     </div>
-                    <Fade right>
+                    <Fade>
                         <div className="contact-map"></div>
                     </Fade>
                 <Footer />

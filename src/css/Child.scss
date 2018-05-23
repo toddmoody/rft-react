@@ -32,8 +32,15 @@ $slate: #4A4A4A;
         .child-project-cards {
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             justify-content: space-between;
             margin: 0 auto;
+        }
+    }
+
+    @media screen and (min-width: 1440px) {
+        .child-project-cards {
+          max-width: 85%;
         }
     }
 }
@@ -146,25 +153,25 @@ $slate: #4A4A4A;
                     }
                 .form-email {
                     flex: 1 0 90%;
-                    font-size: 1.15rem;
+                    font-size: 1rem;
                     font-weight: 300;
                     color: $slate;
                     }
                 .form-phone {
                     flex: 1 0 90%;
-                    font-size: 1.15rem;
+                    font-size: 1rem;
                     font-weight: 300;
                     color: $slate;
                     }
                 .form-subject {
                     flex: 1 0 90%;
-                    font-size: 1.15rem;
+                    font-size: 1rem;
                     font-weight: 300;
                     color: $slate;
                     }
                 .form-msg {
                     flex: 1 0 90%;
-                    font-size: 1.15rem;
+                    font-size: 1rem;
                     font-weight: 300;
                     color: $slate;
                     }
@@ -255,6 +262,7 @@ $slate: #4A4A4A;
                     }
                     .form-container {
                         flex: 1 0 70%;
+                        padding: 0 3rem;
                         .form-name {
                             flex: 1 0 30%;
                             }

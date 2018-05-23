@@ -38,8 +38,8 @@ class ProjectCardPPZA extends Component {
             {isOpen && (
                 <Lightbox
                 mainSrc={images[photoIndex]}
-                nextSrc={images[(photoIndex + 1) % images.length]}
-                prevSrc={images[(photoIndex + images.length - 1) % images.length]}
+                nextSrc={""}
+                prevSrc={""}
                 imageCaption={"Papamoa Plaza Steel Fabrication."}
                 onCloseRequest={() => this.setState({ isOpen: false })}
                 onMovePrevRequest={() =>

@@ -6,13 +6,13 @@ import 'react-image-lightbox/style.css';
 
 import '../../../css/ProjectCard.scss';
 
-import cscf from "../../../assets/cscf-lg.jpg";
+import csca from "../../../assets/csca-lg.jpg";
 
 const images = [
-  cscf,
+  csca,
 ];
 
-class ProjectCardCSCF extends Component {
+class ProjectCardCSCA extends Component {
   constructor(props) {
     super(props);
   
@@ -27,10 +27,10 @@ class ProjectCardCSCF extends Component {
       return (
         <Fade big>
           <div className="projects" onClick={() => this.setState({ isOpen: true})}>
-            <div className="project-img project-cscf"></div>
+            <div className="project-img project-csca"></div>
             <div className="project-dets">
-              <span className="tag">Steel fabrication & erection</span>
-              <h3>Corten steel chimney feature.</h3>
+              <span className="tag">Structural steel</span>
+              <h3>Commercial steel canopy.</h3>
               <p>⇢</p>
             </div>
           </div>
@@ -60,4 +60,4 @@ class ProjectCardCSCF extends Component {
     }
 }
 
-export default ProjectCardCSCF;
+export default ProjectCardCSCA;
