@@ -6,7 +6,6 @@ import Home from "./pages/Home"
 import Services from "./pages/Services"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
-import Material from "./pages/Material"
 
 class App extends Component {
   render() {
@@ -17,8 +16,7 @@ class App extends Component {
               <Route exact path="/" component={Home}/>
               <Route exact path="/services" component={Services}/>
               <Route exact path="/projects" component={Projects}/>
-              <Route exact path="/contact" component={Contact}/>ˇ
-              <Route exact path="/material" component={Material}/>
+              <Route exact path="/contact" component={Contact}/>
             </div>
           </div>
       </HashRouter>

@@ -7,13 +7,13 @@ import '../css/GlobalCTA.scss';
 class GlobalCTA extends Component {
     render() {
         return (
-            <Fade right> 
-                <div id="global-cta">
+            <Fade> 
+                <Link to="/contact" id="global-cta">
                     <div className="global-cta-wrapper">
                         <h3>Keen to chat about your project?</h3>
-                        <Link to="/contact" className="hero-btn">Contact us</Link>
+                        <p>⇢</p>
                     </div>
-                </div>
+                </Link>
             </Fade>
         )
     }

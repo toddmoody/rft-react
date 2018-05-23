@@ -1,4 +1,10 @@
+$white: #FFFFFF;
+$light-copy: rgb(146, 146, 146);
 $light-bgrd: rgb(243, 243, 243);
+$copy-dk: #e9e9e9;
+$red: #ed1c24;
+$slate: #4A4A4A;
+
 
 #child-projects {
     background: $light-bgrd;
@@ -30,11 +36,7 @@ $light-bgrd: rgb(243, 243, 243);
             margin: 0 auto;
         }
     }
-
-    @media screen and (min-width: 1440px) {
-
-        }
-    }
+}
 
 
 #child-services {
@@ -71,9 +73,198 @@ $light-bgrd: rgb(243, 243, 243);
       .child-services-wrapper {
         max-width: 950px;
       }
-
-      .child-services-cards {
-
-      }
   }
 }
+
+#child-contact {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 5.5rem 0 1.65rem 0;
+        .contact-details {
+            margin: 1rem 1rem 2.65rem 1rem;
+            h3 {
+                color: $red;
+                margin-bottom: 0.65rem;
+            }
+            p {
+                line-height: 1.75;
+                font-size: 1.15rem;
+            }
+            a {
+                color: $light-copy;
+                display: inline-block;
+                text-decoration: none;
+                border-bottom: 1px dotted $light-copy;
+                padding-bottom: 0.15rem;
+                font-size: 1.15rem;
+                margin-top: 0.65rem !important;
+            }
+            a:hover {
+                color: $slate;
+                border-bottom: 1px dotted $slate;
+
+            }
+        }
+        .form-container {
+            margin: 0 auto;
+            width: 95%;
+            .submit-btn {
+                margin-top: 3.2em !important;
+                border-radius: 3px;
+                padding: 1rem 2.2rem;
+                margin-top: 0.3em;
+                color: $slate;
+                background-color: transparent;
+                border: 1px solid $slate;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                transition: .2s ease-in-out;
+                }
+            .submit-btn:hover {
+                padding: 1rem 2.6rem;
+                color: $white;
+                background-color: $red;
+                border: 1px solid $red;
+                }
+            .submit-btn:focus {
+                outline:0;
+                }
+            }
+            .form-row-one,
+            .form-row-two,
+            .form-row-three {
+                display: flex;
+                flex-flow: wrap;
+                flex-direction: row;
+                .form-name {
+                    flex: 1 0 90%;
+                    font-size: 1.15rem;
+                    font-weight: 300;
+                    color: $slate;
+                    }
+                .form-email {
+                    flex: 1 0 90%;
+                    font-size: 1.15rem;
+                    font-weight: 300;
+                    color: $slate;
+                    }
+                .form-phone {
+                    flex: 1 0 90%;
+                    font-size: 1.15rem;
+                    font-weight: 300;
+                    color: $slate;
+                    }
+                .form-subject {
+                    flex: 1 0 90%;
+                    font-size: 1.15rem;
+                    font-weight: 300;
+                    color: $slate;
+                    }
+                .form-msg {
+                    flex: 1 0 90%;
+                    font-size: 1.15rem;
+                    font-weight: 300;
+                    color: $slate;
+                    }
+                .f-control {
+                    padding: 8px 4px;
+                    margin: .4em .6em;
+                    }
+                /* handle border and placeholder styles */
+                input {
+                    outline: none;
+                    border-top: transparent;
+                    border-right: transparent;
+                    border-bottom: 1px solid rgb(238, 238, 238) !important;
+                    border-left: transparent;
+                    transition: all .4s ease-in-out;
+                    }
+                input::-webkit-input-placeholder {
+                    color: rgb(146, 146, 146);
+                    }
+                input::-moz-placeholder {
+                    color: rgb(146, 146, 146);
+                    }
+                input:-ms-input-placeholder {
+                    color:rgb(146, 146, 146);
+                    }
+                input:-moz-placeholder {
+                    color: rgb(146, 146, 146);
+                    }
+                input:focus {
+                    border-bottom: 1px solid #444 !important;
+                    }
+                textarea {
+                    border-bottom: 1px solid rgb(238, 238, 238) !important;
+                    border: none;
+                    background-color: transparent;
+                    resize: none;
+                    outline: none;
+                    border-top: transparent;
+                    border-right: transparent;
+                    border-left: transparent;
+                    overflow: hidden;
+                    word-wrap: break-word;
+                    border-bottom-style: inset;
+                    transition: all .4s ease-in-out;
+                    }
+                textarea:focus {
+                    border-bottom: 1px solid #444 !important;
+                    }
+                textarea::-webkit-input-placeholder {
+                    color: rgb(146, 146, 146);
+                    }
+                
+                textarea::-moz-placeholder {
+                    color: rgb(146, 146, 146);
+                    }
+                
+                textarea:-ms-input-placeholder {
+                    color:rgb(146, 146, 146);
+                    }
+                
+                textarea:-moz-placeholder {
+                    color: rgb(146, 146, 146);
+                    }
+        }
+  
+}
+
+    .contact-map {
+            height: 375px;
+            margin-top: 5.5rem;
+            background: url("../assets/contact-map.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+            @media screen and (min-width: 769px) {
+                .contact-container {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    max-width: 1250px;
+                    margin: 0 auto;
+                    padding: 5.5rem 2rem 1.65rem 2rem;
+                    .contact-details {
+                        flex: 1 0 20%;
+                        margin-right: 2rem;
+                    }
+                    .form-container {
+                        flex: 1 0 70%;
+                        .form-name {
+                            flex: 1 0 30%;
+                            }
+                        .form-email {
+                            flex: 1 0 30%;
+                            }
+                    }
+                }
+            }
+}
+
+
+

@@ -3,13 +3,14 @@ import Fade from "react-reveal/Fade";
 
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import Material from "./Material"
+
+import "../css/Child.scss"
 
 class Contact extends Component {
 
     render() {
         return (
-            <div>
+            <section id="child-contact">
                 <header className="child-wrapper">
                     <Navbar />
                     <Fade>
@@ -19,9 +20,34 @@ class Contact extends Component {
                       </div>
                     </Fade>
                 </header>
-                  <Material />
+                    <div className="contact-container">
+                        <div className="contact-details">
+                            <h3>Visit us</h3>
+                            <p>RFT Engineering (2016) Ltd</p>
+                            <p>19 Reynolds Place</p>
+                            <p>Papamoa 3118</p>
+                            <a href="https://goo.gl/maps/kL1HdpSszQF2" target="blank">Get directions</a>
+                        </div>
+                        <form className="form-container" action="https://formspree.io/todd@moodsdigital.co.nz" method="POST">
+                            <div className="form-row-one">
+                                <input className="form-name f-control" type="text" id="contact-name" name="contact-name" placeholder="Name" required />
+                                <input className="form-email f-control" type="email" id="contact-email" name="contact-email" placeholder="Email Address" required />
+                            </div>
+                            <div className="form-row-two">
+                                <input className="form-phone f-control" type="text" id="contact-phone" name="contact-phone" placeholder="Phone" />
+                                <input className="form-subject f-control" type="text" id="contact-subject" name="contact-subject" placeholder="Subject" required />
+                            </div>
+                            <div className="form-row-three">
+                                <textarea className="form-msg f-control" id="contact-message" name="contact-message" rows="1" placeholder="Your Message" required />
+                            </div>
+                                <button className="submit-btn" type="submit" id="contact-submit" name="contact-submit" value="submit">Send Message</button>
+                        </form>
+                    </div>
+                    <Fade right>
+                        <div className="contact-map"></div>
+                    </Fade>
                 <Footer />
-            </div>
+            </section>
         );
     }
 }
