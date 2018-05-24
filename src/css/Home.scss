@@ -1,5 +1,5 @@
 $white: #FFF;
-$red: #ed1c24;
+$red: rgba(238, 28, 37, 0.83);
 $light-bgrd: rgb(243, 243, 243);
 $slate: #4A4A4A;
 $copy-dk: #cccccc;
@@ -36,7 +36,7 @@ $feature-dk: #05141D;
             text-decoration: none;
             }
             .cta-btn:hover {
-             background-color: red;
+             background-color: $red;
              padding: 1rem 3.15rem;
              transition-delay: 0s;
              transition-duration: 0.3s;

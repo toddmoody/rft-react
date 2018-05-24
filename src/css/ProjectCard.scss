@@ -1,7 +1,7 @@
 $white: #FFFFFF;
 $tag: #F1F0F0;
 $slate: #4A4A4A;
-$red: #ed1c24;
+$red: rgba(238, 28, 37, 0.83);
 $light-bgrd: #FAFAFA;
 
 .projects {
@@ -106,7 +106,7 @@ $light-bgrd: #FAFAFA;
         }
 
         @media screen and (min-width: 769px) {
-                width: 48.5%;
+                width: 31.5%;
             }
             @media screen and (min-width: 1440px) {
                 width: 32%;
@@ -121,7 +121,7 @@ $light-bgrd: #FAFAFA;
     }
     .projects:hover {
         .project-dets {
-            background: $red;
+            background: rgb(238, 28, 37);
         }
         h3 {
             color: $white;

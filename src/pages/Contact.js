@@ -22,6 +22,8 @@ class Contact extends Component {
                 </header>
                     <div className="contact-container">
                         <div className="contact-details">
+                            <h3>Phone</h3>
+                            <p className="spacer-btm">07 575 8040</p>
                             <h3>Visit us</h3>
                             <p>RFT Engineering (2016) Ltd</p>
                             <p>19 Reynolds Place</p>

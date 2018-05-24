@@ -2,7 +2,7 @@ $white: #FFFFFF;
 $light-copy: rgb(146, 146, 146);
 $light-bgrd: rgb(243, 243, 243);
 $copy-dk: #e9e9e9;
-$red: #ed1c24;
+$red: rgba(238, 28, 37, 0.83);
 $slate: #4A4A4A;
 
 
@@ -40,7 +40,7 @@ $slate: #4A4A4A;
 
     @media screen and (min-width: 1440px) {
         .child-project-cards {
-          max-width: 85%;
+          max-width: 1250px;
         }
     }
 }
@@ -93,11 +93,14 @@ $slate: #4A4A4A;
             margin: 1rem 1rem 2.65rem 1rem;
             h3 {
                 color: $red;
-                margin-bottom: 0.65rem;
+                margin-bottom: 0.15rem;
             }
             p {
                 line-height: 1.75;
                 font-size: 1.15rem;
+            }
+            .spacer-btm {
+                margin-bottom: 0.85rem;
             }
             a {
                 color: $light-copy;
