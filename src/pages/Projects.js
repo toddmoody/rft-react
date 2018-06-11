@@ -21,20 +21,19 @@ class Projects extends Component {
   render() {
     return (
         <div>
-            <header className="child-wrapper">
+            <header className="child-projects child-wrapper">
                 <Navbar />
                 <Fade>
                   <div className="page-title">
                       <span>Check out our recent</span>
                       <h2>Residential & Commercial Projects</h2>
-
                   </div>
                 </Fade>
             </header>
             <section id="child-projects">
                 <div className="wrapper">
-                    <div className="child-projects-wrapper">
-                        <p className="statement">We’re proud to work on a wide range of engineering projects - both for commercial and residential properties. Typically our projects are located in the wider Papamoa/Tauranga region but we’re also willing to travel further afield in some cases for the right project - contact us to discuss. </p>
+                    <div className="copy-wrapper">
+                        <p>We’re proud to work on a wide range of engineering projects - both for commercial and residential properties. Typically our projects are located in the wider Papamoa/Tauranga region but we’re also willing to travel further afield in some cases for the right project - contact us to discuss.</p>
                     </div>
                     <div className="child-project-cards">
                         <ProjectCardTRAL />

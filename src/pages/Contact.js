@@ -11,7 +11,7 @@ class Contact extends Component {
     render() {
         return (
             <section id="child-contact">
-                <header className="child-wrapper">
+                <header className="child-contact child-wrapper">
                     <Navbar />
                     <Fade>
                       <div className="page-title">

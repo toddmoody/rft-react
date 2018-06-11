@@ -14,6 +14,12 @@ $slate: #4A4A4A;
         padding-bottom: 4.5rem;
         margin: 0 auto;
     }
+    .copy-wrapper {
+        padding-bottom: 3.4rem;
+        p {
+            margin-bottom: 1.2rem;
+          }
+        }
 
     .child-project-cards {
         display: flex;
@@ -28,7 +34,10 @@ $slate: #4A4A4A;
             flex-direction: row;
             justify-content: space-between;
         }
-
+        .copy-wrapper {
+            margin: 0 auto;
+            max-width: 70%;
+        }
         .child-project-cards {
             display: flex;
             flex-direction: row;
@@ -53,13 +62,22 @@ $slate: #4A4A4A;
     width: 80%;
     padding-bottom: 3rem;
     margin: 0 auto;
-    p {
-      margin-bottom: 1.2rem;
-    }
+
   }
+  .copy-wrapper {
+    padding-bottom: 3.4rem;
+    p {
+        margin-bottom: 1.2rem;
+      }
+    }
   .child-services-cards {
     display: flex;
     flex-direction: column;
+  }
+  .close-statement {
+      margin-top: 5.5rem;
+      margin-bottom: 1.5rem;
+      max-width: 75%;
   }
 
   @media screen and (min-width: 769px) {
@@ -67,7 +85,10 @@ $slate: #4A4A4A;
           width: 65%;
           margin: 0 auto;
       }
-
+      .copy-wrapper {
+          margin: 0 auto;
+          max-width: 70%;
+      }
       .child-services-cards {
           display: flex;
           flex-direction: row;
@@ -275,6 +296,25 @@ $slate: #4A4A4A;
                     }
                 }
             }
+}
+
+#child-about {
+    background: $light-bgrd;
+    .copy-wrapper {
+        padding: 5.5rem 0 4rem 0;
+        p {
+            margin-bottom: 1.2rem;
+          }
+        }
+}
+
+@media screen and (min-width: 769px) {
+    #child-about {
+        .copy-wrapper {
+            margin: 0 auto;
+            max-width: 60%;
+        }
+    }
 }
 
 

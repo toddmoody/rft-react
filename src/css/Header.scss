@@ -1,6 +1,6 @@
 //variables
 $white: #FFF;
-$off-white: #f0f0f0;
+$off-white: #cccccc;
 $white-btn: rgba(255, 255, 255, 0.6);
 $slate: #4A4A4A;
 $sub-slate: rgb(100,100,100);
@@ -201,31 +201,63 @@ $feature-dk: #05141D;
 }
 
 //child specific styles
-.child-wrapper {
+.child-services-bgrd {
     background: url(../assets/services-bgrd.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: $slate;
-    height: 480px;
+}
+
+.child-projects {
+    background: url(../assets/projects-bgrd.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.child-about {
+    background: url(../assets/about-bgrd.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.child-contact {
+    background: url(../assets/contact-bgrd.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.child-wrapper {
+    height: 420px;
     margin: 0;
     display: flex;
     flex-direction: column;
     .page-title {
         width: 90%;
-        margin: auto;
-        margin-top: 6.5rem;
+        margin: 2.8rem auto;
         h2 {
-            margin: 0.35rem 0 0.65rem 0;
+            margin: 0.15rem 0 0.65rem 0;
             text-transform: uppercase;
             color: $white;
-            font-size: 1.75rem;
+            font-size: 2.05rem;
 
         }
         span {
             display: inline;
             color: $off-white;
-            font-size: 1.05rem;
+            font-size: 0.85rem;
+        }
+        hr {
+            width: 200px;
+            margin: 1.25rem auto;
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+        p {
+            color: $white;
+            font-size: 0.95rem;
+            margin-bottom: 0.65rem;
         }
     }
 
@@ -233,9 +265,10 @@ $feature-dk: #05141D;
             .page-title {
                 width: 65%;
                 padding: 0.95rem 0 0.45rem 0;
+                margin: 3.65rem auto;
                 h2 {
                     margin: 0.35rem 0 0.65rem 0;
-                    font-size: 1.95rem;
+                    font-size: 2.15rem;
                 }
                 span {
                     font-size: 1.15rem;
