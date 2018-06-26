@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 import '../../css/ServicesCard.scss';
 
-import Hiab from "../../assets/hiab.png"
+import Thumb from "../../assets/3d-bgrd.png"
 
 class ServicesCardChild3D extends Component {
   render(){
@@ -11,10 +11,10 @@ class ServicesCardChild3D extends Component {
       <Fade big>
         <div className="services-child">
           <div className="services-icon-child">
-            <img src={Hiab} alt="hiab"></img>
+            <img src={Thumb} alt="3D steel detailing"></img>
           </div>
-          <h3>3D structural steel detailing</h3>
-          <p className="statement">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.</p>
+          <h3>3D Structural Steel Detailing</h3>
+          <p className="statement">We are able to utilise the latest in 3D modelling tools & technology in order to organise the production of structural drawings for your engineering project.</p>
         </div>
       </Fade>
     );
@@ -22,3 +22,4 @@ class ServicesCardChild3D extends Component {
 }
 
 export default ServicesCardChild3D;
+ 

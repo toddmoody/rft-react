@@ -6,7 +6,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
-import { faFacebook, faLinkedin } from '@fortawesome/fontawesome-free-brands';
+import { faFacebook } from '@fortawesome/fontawesome-free-brands';
 import FaEnvelope from '@fortawesome/fontawesome-free-solid/faEnvelope';
 
 import '../css/About.scss';
@@ -35,7 +35,7 @@ class About extends Component {
                     <Fade>
                         <aside>
                             <div>
-                                <div className="profile-pic"></div>
+                                <div className="profile-rich"></div>
                                 <h1>Richard Easton</h1>
                                 <h3>Director</h3>
                             </div>
@@ -44,8 +44,7 @@ class About extends Component {
                                 <p>Richard is now putting that knowledge, experience and expertise into running RFT Engineering is and continues to enjoy the challenges of owning and operating a business.</p>
                             </div>
                             <ul classNmae="profile-social-links">
-                                <li><a target="_blank" href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook}/></a></li>
-                                <li><a target="_blank" href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                                <li><a target="blank" href="https://www.facebook.com/RFTEngineering2016/"><FontAwesomeIcon icon={faFacebook}/></a></li>
                                 <li><Link to="/contact"><FontAwesomeIcon icon={FaEnvelope} /></Link></li>
                             </ul>
                         </aside>
@@ -53,7 +52,7 @@ class About extends Component {
                     <Fade>
                     <aside>
                             <div>
-                                <div className="profile-pic"></div>
+                                <div className="profile-shelly"></div>
                                 <h1>Shelly Easton</h1>
                                 <h3>Administration & Accounts</h3>
                             </div>
@@ -62,8 +61,7 @@ class About extends Component {
                                 <p>In addition to Richard and Shelly, we have an experienced team at RFT Engineering working to supply builders and homeowners with a high level of customer service. </p>
                             </div>
                             <ul className="profile-social-links">
-                                <li><a target="_blank" href="https://www.facebook.com/"><FontAwesomeIcon icon={faFacebook}/></a></li>
-                                <li><a target="_blank" href="https://www.linkedin.com/"><FontAwesomeIcon icon={faLinkedin}/></a></li>
+                                <li><a target="blank" href="https://www.facebook.com/RFTEngineering2016/"><FontAwesomeIcon icon={faFacebook}/></a></li>
                                 <li><Link to="/contact"><FontAwesomeIcon icon={FaEnvelope} /></Link></li>
                             </ul>
                         </aside>

@@ -27,7 +27,7 @@ $feature-dk: #05141D;
                 font-size: 1.55rem;
                 font-weight: 700;
                 line-height: 2.10rem;
-                letter-spacing: -.1rem;
+                letter-spacing: 0rem;
             }
             .btn-wrapper {
                 margin-top: 2.15rem;
@@ -133,7 +133,7 @@ $feature-dk: #05141D;
                     font-size: 2.25rem;
                     font-weight: 700;
                     line-height: 3.45rem;
-                    letter-spacing: -.1rem;
+                    letter-spacing: -0.07rem;
                 }
             }
             .btn-wrapper {
@@ -178,7 +178,7 @@ $feature-dk: #05141D;
                     font-size: 2.95rem;
                     font-weight: 700;
                     line-height: 3.95rem;
-                    letter-spacing: -.1rem;
+                    letter-spacing: -0.07rem;
                 }
             }
             .btn-wrapper {
@@ -239,7 +239,6 @@ $feature-dk: #05141D;
         margin: 2.8rem auto;
         h2 {
             margin: 0.15rem 0 0.65rem 0;
-            text-transform: uppercase;
             color: $white;
             font-size: 2.05rem;
 

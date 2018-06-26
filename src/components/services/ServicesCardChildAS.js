@@ -3,7 +3,7 @@ import Fade from "react-reveal/Fade";
 
 import '../../css/ServicesCard.scss';
 
-import Hiab from "../../assets/hiab.png"
+import Thumb from "../../assets/ag-child-thumb.png"
 
 class ServicesCardChildAS extends Component {
   render(){
@@ -11,10 +11,10 @@ class ServicesCardChildAS extends Component {
       <Fade big>
         <div className="services-child">
           <div className="services-icon-child">
-            <img src={Hiab} alt="hiab"></img>
+            <img src={Thumb} alt="Alloy, Galvanized & Stainless"></img>
           </div>
-          <h3>Alloy & Stainless</h3>
-          <p className="statement">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.</p>
+          <h3>Alloy, Galvanized & Stainless</h3>
+          <p className="statement">Typically project designs can be fabricated into mild steel & alloy, galvanised, or stainless steel.  We can also provide a premium satin and polish, or arrange powder coating to your specific requirements.</p>
         </div>
       </Fade>
     );

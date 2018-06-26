@@ -71,8 +71,10 @@ $slate: #4A4A4A;
       }
     }
   .child-services-cards {
-    display: flex;
-    flex-direction: column;
+    .service-row {
+        display: flex;
+        flex-direction: column;
+    }
   }
   .close-statement {
       margin-top: 5.5rem;
@@ -90,10 +92,11 @@ $slate: #4A4A4A;
           max-width: 70%;
       }
       .child-services-cards {
-          display: flex;
-          flex-direction: row;
-          flex-wrap: wrap;
-          justify-content: center;
+        .service-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
   }
 }
 
@@ -264,12 +267,7 @@ $slate: #4A4A4A;
 }
 
     .contact-map {
-            height: 375px;
             margin-top: 5.5rem;
-            background: url("../assets/contact-map.jpg");
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: cover;
         }
 
             @media screen and (min-width: 769px) {

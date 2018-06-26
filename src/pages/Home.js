@@ -1,8 +1,6 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom"
 import { HashLink as Link } from "react-router-hash-link";
 import Fade from "react-reveal/Fade";
-import HeadShake from 'react-reveal/HeadShake';
 
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
@@ -19,11 +17,9 @@ import ServicesCardAS from '../components/home/services-cards/ServicesCardAS';
 import ServicesCard3D from '../components/home/services-cards/ServicesCard3D';
 import ServicesCardHI from '../components/home/services-cards/ServicesCardHI';
 
-import Sample from '../components/Sample';
-
 //project card imports
-import ProjectCardSSHRA from '../components/home/project-cards/ProjectCardSSHRA';
-import ProjectCardCSCF from '../components/home/project-cards/ProjectCardCSCF';
+import ProjectCardOPBG from '../components/home/project-cards/ProjectCardOPBG';
+import ProjectCardRSFW from '../components/home/project-cards/ProjectCardRSFW';
 import ProjectCardPPZA from '../components/home/project-cards/ProjectCardPPZA';
 
 //SASS import statements
@@ -39,9 +35,9 @@ class Home extends Component {
                         <Fade big>
                           <div className="content-block">
                               <div>
-                                  <h1>RFT ENGINEERING:</h1>
-                                  <h1>EFFICIENT, GUARANTEED, AND</h1>
-                                  <h1>PROFESSIONAL SERVICE.</h1>
+                                  <h1>RFT Engineering:</h1>
+                                  <h1>efficient, guaranteed, and</h1>
+                                  <h1>professional service.</h1>
                               </div>
                               <div className="btn-wrapper">
                                   <Link to="/#intro" className="hero-btn">More about us</Link>
@@ -87,8 +83,8 @@ class Home extends Component {
                     </div>
                     <Fade big>
                       <div className="projects-card-wrapper">
-                          <ProjectCardSSHRA />
-                          <ProjectCardCSCF />
+                          <ProjectCardOPBG />
+                          <ProjectCardRSFW />
                           <ProjectCardPPZA />
                       </div>
                     </Fade>
@@ -98,7 +94,7 @@ class Home extends Component {
                 <div className="wrapper">
                     <div className="cta-wrapper">
                         <p className="sub-title">Get in touch</p>
-                        <p className="statemnent">Please contact us to disucss your residential or commercial engineering needs - no job is too big or too small.</p>
+                        <p className="statemnent">Please contact us to discuss your residential or commercial engineering needs - no job is too big or too small.</p>
                         <Link to="/contact" className="cta-btn">Contact us</Link>
                     </div>
                 </div>

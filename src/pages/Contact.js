@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import Fade from "react-reveal/Fade";
 
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import MapContainer from '../components/MapContainer';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 import "../css/Child.scss"
 
 class Contact extends Component {
-
     render() {
         return (
             <section id="child-contact">
@@ -46,7 +46,9 @@ class Contact extends Component {
                         </form>
                     </div>
                     <Fade>
-                        <div className="contact-map"></div>
+                      <div className="contact-map">
+                            <MapContainer />
+                    </div>
                     </Fade>
                 <Footer />
             </section>

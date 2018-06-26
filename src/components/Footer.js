@@ -13,20 +13,21 @@ class Footer extends Component {
                     <div className="footer-wrapper">
                         <div className="flex-col-1">
                             <p className="statement-dk">About RFT (2016) Engineering</p>
-                            <p>Established in 2016, Right First Engineering (RFT) provides a holistic range of enginerring services to both the residential and commercial markets.</p>
+                            <p>Established in 2016, Right First Engineering (RFT) provides a holistic range of engineering services to both the residential and commercial markets.</p>
                             <p><Link to="/services">More on services</Link> | <Link to="/contact">Contact us</Link></p>    
                         </div>
                         <div className="flex-col-2">
                             <p className="statement-dk">Links</p>
                             <ul>
-                                <li><Link className="footer-links" to="/services">About & Services</Link></li>
+                                <li><Link className="footer-links" to="/services">Services</Link></li>
                                 <li><Link className="footer-links" to="/projects">Projects</Link></li>
+                                <li><Link className="footer-links" to="/about">About</Link></li>
                                 <li><Link className="footer-links" to="/contact">Contact</Link></li>
                             </ul>
                         </div>
                         <div className="flex-col-3">
-                        <FontAwesomeIcon className="footer-icon" icon={faFacebookSquare} />
-                            <p>© RFT (2016) Engineering LTD  2018</p>
+                        <a className="footer-social" href="https://www.facebook.com/RFTEngineering2016/" target="blank"><FontAwesomeIcon className="footer-icon" icon={faFacebookSquare} /></a>
+                            <p>© RFT (2016) Engineering LTD 2018</p>
                             <p>Website hand coded by <a href="http://www.moodsdigital.co.nz" target="blank">Moods Digital</a></p>
                         </div>
                     </div>

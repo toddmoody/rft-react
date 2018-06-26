@@ -1,21 +1,15 @@
 import React, { Component } from 'react';
-import { NavLink } from "react-router-dom"
-import Fade from "react-reveal/Fade";
-
-import Hiab from "../../../assets/hiab.png"
+import { HashLink as Link } from "react-router-hash-link";
 
 import '../../../css/ServicesCard.scss';
 
 class ServicesCardSF extends Component {
   render() {
     return (
-      <NavLink to="/services" className="services">
-        <div className="services-icon">
-          <img src={Hiab} alt="hiab"></img>
-        </div>
+      <Link to="/services/#service-b" className="services services-sf">
         <h3>Steel Fabrication & Erection</h3>
         <p>⇢</p>
-      </NavLink>
+      </Link>
     );
   }
 }

@@ -20,10 +20,20 @@ $slate: #4A4A4A;
         border-radius: 7px 7px 7px 7px;
         box-shadow: 17px 17px 7px -13px #D8D8D8;
         transition: all 0.5s;
-        .profile-pic {
-            background: url(../assets/placeholder-profile.jpg);
+        .profile-shelly {
+            background: url(../assets/profile-shelly.jpg);
             background-repeat: no-repeat;
-            background-position: top;
+            background-position: center;
+            background-size: cover;
+            height: 400px;
+            max-width: 100%;
+            border-radius: 7px 7px 0 0;
+            z-index: inherit;
+        }
+        .profile-rich {
+            background: url(../assets/profile-rich.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
             background-size: cover;
             height: 400px;
             max-width: 100%;

@@ -12,50 +12,68 @@ $light-bgrd: #FAFAFA;
         height: 300px;
         border-radius: 3px 3px 0 0;
     }
-    .project-tral {
-        background: url(./../assets/tral-lg.jpg);
+    .project-ssbe {
+        background: url(./../assets/ssbe-lg-5.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
     }
-    .project-swhr {
-        background: url(./../assets/swhr-lg.jpg);
+    .project-zegh {
+        background: url(./../assets/zegh-lg-1.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
     }
-    .project-cssg {
-        background: url(./../assets/cssg-lg.jpg);
+    .project-opbg {
+        background: url(./../assets/opbg-lg-1.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
     }
-    .project-csro {
-        background: url(./../assets/csro-lg.jpg);
+    .project-kabm {
+        background: url(./../assets/kabm-lg-1.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
     }
-    .project-rsbe {
-        background: url(./../assets/rsbe-lg.jpg);
+    .project-kpgh {
+        background: url(./../assets/kpgh-lg-1.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
     }
-    .project-csca {
-        background: url(./../assets/csca-lg.jpg);
+    .project-gwcv {
+        background: url(./../assets/gwcv-lg-1.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
     }
-    .project-sshra {
-        background: url(./../assets/sshra-lg.jpg);
+    .project-sorv {
+        background: url(./../assets/sorv-lg.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
     }
-    .project-cscf {
-        background: url(./../assets/cscf-lg.jpg);
+    .project-ljsh {
+        background: url(./../assets/ljsh-lg-1.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-cdop {
+        background: url(./../assets/cdop-lg-1.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-aame {
+        background: url(./../assets/aame-lg-1.jpg);
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+    }
+    .project-rsfw {
+        background: url(./../assets/rsfw-lg-1.jpg);
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
@@ -113,6 +131,11 @@ $light-bgrd: #FAFAFA;
                 .project-dets {
                 .tag-add {
                     display: inline;
+                    margin-left: 1rem;
+                    font-size: 0.65rem;
+                    padding: 8px 8px;
+                    background: $tag;
+                    border-radius: 3px;
                 }
             }
             }

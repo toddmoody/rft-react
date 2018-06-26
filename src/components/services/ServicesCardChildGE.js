@@ -3,18 +3,16 @@ import Fade from "react-reveal/Fade";
 
 import '../../css/ServicesCard.scss';
 
-import Hiab from "../../assets/hiab.png"
+import Thumb from "../../assets/ge-child-thumb.png"
 
 class ServicesCardChildGE extends Component {
   render(){
     return (
       <Fade big>
         <div className="services-child">
-          <div className="services-icon-child">
-            <img src={Hiab} alt="hiab"></img>
-          </div>
+          <img src={Thumb} alt="General Engineering"></img>
           <h3>General Engineering</h3>
-          <p className="statement">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.</p>
+          <p className="statement">We handle all forms of general engineering work including steel production, marine engineering, tool-making, balustrades, handrails and general welding (incl. repair-work).</p>
         </div>
       </Fade>
     );

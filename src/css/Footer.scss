@@ -29,14 +29,26 @@ $red: rgba(238, 28, 37, 0.83);
         text-decoration: none;
         border-bottom: 1px dotted $copy-dk;
     }
+
     a:hover {
         color: $white;
         border-bottom: 1px dotted $white;
     }
+    p {
+     font-size: 1.1rem;   
+    }
     .footer-links {
         border-bottom: none;
+        font-size: 1.1rem;
     }
     .footer-links:hover {
+        border-bottom: none;
+    }
+    .footer-social {
+        text-decoration: none;
+        border-bottom: none;
+    }
+    .footer-social:hover {
         border-bottom: none;
     }
     .footer-wrapper {
@@ -71,11 +83,6 @@ $red: rgba(238, 28, 37, 0.83);
                 margin-bottom: 0.55rem;
             }
         }
-
-
-            @media screen and (min-width: 550px) {
-            }
-
             @media screen and (min-width: 769px) {
                 text-align: center;
                 flex-direction: row;
@@ -94,9 +101,6 @@ $red: rgba(238, 28, 37, 0.83);
                 text-align: right;
                 flex: 1 0 20%;
             }
-    }
-
-            @media screen and (min-width: 1440px) {
             }
-    }
+        }
     }

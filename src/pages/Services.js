@@ -21,7 +21,7 @@ class Services extends Component {
                 <Fade big>
                 <div className="page-title">
                     <span>No job is too big or too small</span>
-                    <h2>Engineering Services</h2>
+                    <h2>Engineering services</h2>
                 </div>
                 </Fade>
             </header>
@@ -32,12 +32,18 @@ class Services extends Component {
                     <p>Stainless steel is a practical addition to any home or business whether it’s a handrail, gate, pool surround or bollard. We will fabricate and install our polished Stainless Steel efficiently with little disruption to the client or other trades.</p>
                 </div>
                 <div className="child-services-cards">
+                    <div id="service-a" className="service-row">
                     <ServicesCardChildGE />
                     <ServicesCardChildSS />
+                    </div>
+                    <div id="service-b" className="service-row">
                     <ServicesCardChildSF />
                     <ServicesCardChildAS />
+                    </div>
+                    <div id="service-c" className="service-row">
                     <ServicesCardChild3D />
                     <ServicesCardChildHI />
+                    </div>
                 </div>
               </div>
                 <div className="close-statement wrapper">

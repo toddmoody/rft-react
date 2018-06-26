@@ -4,24 +4,26 @@ $slate: #4A4A4A;
 $red: #f16059;
 
 .mob-nav {
-    height: 80vh;
+    height: 60vh;
     width: 100%;
     background: $white;
     position: absolute;
     margin: 0;
     z-index: 1;
+    display: flex;
+    justify-content: center;
     ul {
         list-style: none;
         color: $white;
-        font-size: 1rem;
+        font-size: 0.85rem;
         text-align: center;
-        padding: 1.5rem 5.5rem 2.5rem 5.5rem;
+        padding: 3.95rem 5.5rem 2.5rem 5.5rem;
     }
     ul li {
-        padding: 2.85rem 0;
+        padding: 1.55rem 0;
         border-bottom: 0.5px solid rgba(128, 128, 128, 0.2);
         text-decoration: none;
-        font-size: 1.65rem;
+        font-size: 0.95rem;
         text-transform: uppercase;
     }
     p {
