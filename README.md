@@ -37,6 +37,6 @@ Overall, this project was really smooth and it's always great to have a happy cl
 
 ###### Ideas for enhancement 
 
-- [ ] An integration wtih Google Maps could be really useful here to really clarify the wide range of services offered by RFT and the fact that effectively work nationwide. It could also be a nicer, more interactive way to display the gallery images which are currently organised manually (weighted by importance).
+- [ ] An integration with Google Maps could be really useful here to really clarify the wide range of services offered by RFT and the fact that effectively work nationwide. It could also be a nicer, more interactive way to display the gallery images which are currently organised manually (weighted by importance).
 - [ ] Integration with a back-end form service to capture inquires that are submitted would be a cleaner solution (currently using formspree which works to deploy emails to the client but is basic and has no database).
 - [ ] Given a little more time I would like to revisit CSS transitions just to add a few more subtle interactions to the UX. 
