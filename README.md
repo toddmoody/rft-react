@@ -23,7 +23,9 @@ https://rftengineering.co.nz/
 - Sketch & Photoshop (UI/UX)
 - HTML
 - SASS
-- Javascript (ES6) & React (project bootstrapped using create-react-app)
+- Javascript (ES6) & 
+- React (project bootstrapped using create-react-app)
+- React router (hash router for SPA)
 - Babel
 - Webpack 
 
